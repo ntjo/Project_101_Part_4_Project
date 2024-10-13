@@ -2,11 +2,24 @@
 
 ## Project Overview
 
-This project involves the development of
+This project involves the development of a segmentation model to improve the detection of leaf segments on tomato plants using computer vision and advanced AI detection systems.
 
 ## Scope
 
-Improve the segmentation model results on tomato plant leaves.
+The goal is to improve the segmentation model results on tomato plant leaves. Lighting plays a crucial role in agricultural robotics, as it directly impacts the quality and accuracy of image data for monitoring plant health and growth. Inconsistent lighting conditions can reduce image clarity, often hindering the effectiveness of detection systems.
+
+This project proposes a solution for improving plant monitoring using computer vision and advanced AI detection systems. These systems often have clarity issues due to external factors, mainly ambient lighting. The experiment involved capturing RGBN images under various artificial lighting conditions such as halogen, LED floodlights, and NIR LED lights, then training a YOLOv8 model to detect leaf segments on tomato plants. Results showed that while improvements to detection are made in the presence of weak ambient lighting with the NIR and Flood LEDs, artificial lighting is often overpowered by ambient sunlight, reducing its effectiveness. In the context of weak ambient sunlight, the combined RGBN data yielded a 10.6% improvement over the baseline; however, no improvement is seen in strong ambient sunlight.
+
+## Files Included
+
+- `modelTrain.py` - Training code for the YOLOv8 model.
+- `imageNameChanger.py` - Changes the names of the images taken from the RGBN camera.
+- `imageNIRColorMap.py` - Applies NIR colormap to images.
+- `imageMerger.py` - Merges NIR and RGB images into one.
+- `labelling_different_time.py` - Applies labels to different datasets taken at different times.
+- `labelling_NIR.py` - Applies labels from RGB to NIR images.
+  
+  For more information, please read the project compendium.
 
 ## Sample Data
 
