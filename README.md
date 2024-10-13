@@ -27,7 +27,7 @@ Sample data can be found on [Google Drive](https://drive.google.com/drive/folder
 
 ## Roboflow
 
-Deployed segmentation model can be found on this [link](https://universe.roboflow.com/project101-jmq8d/project-101-disease-detection).
+Labelled segmentation images of leaves and deployed segmentation model can be found on this [link](https://universe.roboflow.com/project101-jmq8d/project-101-disease-detection).
 
 ## Colab
 
